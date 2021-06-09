@@ -2,6 +2,9 @@
 
 :root{
     --primary: #2980b9;
+    --success: #2ecc71;
+    --warning: #f1c40f;
+    --danger: #e74c3c;
     --dark: #1D2231;
     --grey: #8390A2;
 }
@@ -13,6 +16,16 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+.bg-success{
+    background-color: var(--success);
+}
+.bg-warning{
+    background-color: var(--warning);
+}
+.bg-danger{
+    background-color: var(--danger);
 }
 
 /* Sidebar */
@@ -153,4 +166,67 @@
 }
 /* End Cards */
 
+/* Table */
+.main-grid{
+    margin-top: 3.5rem;
+}
+.projects{
+    background: #ffffff;
+}
+.projects-header,
+.projects-body{
+    padding: 1rem;
+}
+.projects-header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.projects-header button{
+    background: var(--primary);
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+}
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+thead tr{
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+thead th{
+    text-align: start;
+    padding: 0 1rem;
+}
+thead td{
+    font-weight: 700;
+}
+td{
+    color: #222;
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    text-align: start;
+}
+td .status{
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 1rem;
+    width: 10px;
+}
+tr td:last-child{
+    align-items: center;
+    display: flex;
+}
+/* End Table */
 /* End Main Content */
