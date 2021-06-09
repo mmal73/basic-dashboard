@@ -268,3 +268,33 @@ tr td:last-child{
 }
 /* End Table */
 /* End Main Content */
+
+@media only screen and (max-width: 1200px){
+    /* Menu sidebar */
+    .sidebar{
+        width: 70px;
+    }
+    .sidebar .sidebar-brand,
+    .sidebar li{
+        padding-left: 1rem;
+    }
+    .sidebar li a{
+        padding-left: 0;
+    }
+    .sidebar .sidebar-brand h2 span:last-child,
+    .sidebar li a span:last-child{
+        display: none;
+    }
+    .sidebar li a span:first-child{
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+    .content{
+        margin-left: 70px;
+    }
+    .content header{
+        width: calc( 100% - 70px );
+        left: 70px;
+    }
+    /* End Menu sidebar */
+}
